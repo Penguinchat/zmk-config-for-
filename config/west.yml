@@ -16,6 +16,6 @@ manifest:
       revision: main
     - name: zmk-module
       remote: penguinchat
-      revision: one
+      revision: two
   self:
     path: config
