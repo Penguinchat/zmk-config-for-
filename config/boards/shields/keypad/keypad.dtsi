@@ -135,6 +135,12 @@
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
 
+	indicator {
+        compatible = "zmk,indicator";
+        status-label = "STATUS";
+        layer-label = "LAYER";
+	};
+
 	led_strip: led-strip-remap {
 		compatible = "zmk,led-strip-remap";
 
