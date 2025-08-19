@@ -14,9 +14,9 @@
 ---
 include:
   # zazu
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: keypad
     snippet: studio-rpc-usb-uart
     artifact-name: keypad
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: settings_reset
