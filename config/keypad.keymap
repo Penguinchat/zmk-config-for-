@@ -17,16 +17,6 @@
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
     };
-
-    combos {
-        compatible = "zmk,combos";
-
-        tolayer3 {
-            bindings = <&mo 3>;
-            key-positions = <4 9>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,7 +26,8 @@
 &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT       &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG   &kp KP_NUMBER_7  &kp KP_NUMBER_7
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG   
+&mo 1  &mo 2 
             >;
 
             label = "Layer0";
@@ -50,7 +41,8 @@
 &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS    
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT        &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  &trans   &mo 3
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG 
+&trans   &mo 3
             >;
 
             sensor-bindings =
@@ -66,7 +58,8 @@
 &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT        &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  &mo 3  &trans
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG 
+&mo 3  &trans
             >;
 
             sensor-bindings =
@@ -82,13 +75,30 @@
 &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT        &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  &trans  &trans
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  
+&trans  &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_UP PG_DN>,
                 <&rgb_encoder>;
+        };
+    extra1 {
+            status = "reserved";
+                display-name = "LAYER_4";
+        };
+        extra2 {
+            status = "reserved";
+                display-name = "LAYER_5";
+        };
+        extra3 {
+            status = "reserved";
+                display-name = "LAYER_6";
+        };
+        extra4 {
+            status = "reserved";
+                display-name = "LAYER_7";
         };
     };
 };
