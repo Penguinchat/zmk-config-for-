@@ -32,11 +32,11 @@
 
         layer_0 {
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      &kp KP_NUMBER_7
-&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     &kp KP_NUMBER_7
+&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      
+&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT       &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG   &kp KP_NUMBER_7  &kp KP_NUMBER_7
             >;
 
             label = "Layer0";
@@ -46,11 +46,11 @@
         layer_1 {
             label = "Layer1";
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      &trans
-&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     &mo 3
+&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      
+&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS    
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT        &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  &trans   &mo 3
             >;
 
             sensor-bindings =
@@ -62,11 +62,11 @@
         layer_2 {
             label = "Layer2";
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      &mo 3
-&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     &trans
+&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      
+&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT        &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  &mo 3  &trans
             >;
 
             sensor-bindings =
@@ -78,11 +78,11 @@
         layer_3 {
             label = "Layer3";
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      &trans
-&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     &trans
+&kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9    &kp STAR      
+&kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6    &kp MINUS     
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp PLUS
 &kp KP_NUMBER_0  &kp KP_DOT        &ext_power EP_TOG  &kp KP_ENTER
-&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG
+&kp C_MUTE       &kp K_PLAY_PAUSE  &rgb_ug RGB_TOG  &trans  &trans
             >;
 
             sensor-bindings =
