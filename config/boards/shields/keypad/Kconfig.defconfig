@@ -2,10 +2,6 @@ if SHIELD_KEYPAD
 
 config ZMK_KEYBOARD_NAME
     default "KEYPAD"
-endif
-if ZMK_KEYBOARD_YOUR_KEYBOARD
-
 config ZMK_STATUS_LED
     default y
-
 endif
