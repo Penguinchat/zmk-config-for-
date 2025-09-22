@@ -12,6 +12,7 @@
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
         zmk,underglow = &led_strip;
+        zmk,battery = &vbatt;
     };
 
     default_transform: keymap_transform_0 {
@@ -175,12 +176,4 @@
         led = <&status_led>;
     };
 };
-/ {
-    chosen {
-      zmk,battery = &vbatt;
-    };
 
-    vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
-    };
-};
