@@ -164,6 +164,7 @@
 
 &pwm0 {
     status = "okay";
+	compatible = "nordic,nrf-pwm-custom"; 
     prescaler = <4>;  // 16MHz / (2^4) = 1MHz
     pinctrl-0 = <&pwm0_default>;
     pinctrl-1 = <&pwm0_sleep>;
