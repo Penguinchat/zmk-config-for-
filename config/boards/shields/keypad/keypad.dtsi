@@ -164,7 +164,7 @@
 
 &pwm0 {
     status = "okay";
-    clocks = <&clock NRF_CLOCK_PWM_CLK_1M>;  // 间接设置1MHz时钟
+    prescaler = <4>;  // 16MHz / (2^4) = 1MHz
     pinctrl-0 = <&pwm0_default>;
     pinctrl-1 = <&pwm0_sleep>;
     pinctrl-names = "default", "sleep";
