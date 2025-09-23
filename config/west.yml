@@ -12,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-rgbled-widget  # <-- new entry
-      remote: penguincaht
+      remote: penguinchat
       revision: main
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
