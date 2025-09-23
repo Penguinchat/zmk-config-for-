@@ -146,17 +146,17 @@
         
         // 共阴LED需要移除PWM_POLARITY_INVERTED
         red_pwm_led: pwm_led_red {
-            pwms = <&pwm0 0 20000>;  // 移除PWM_POLARITY_INVERTED
+            pwms = <&pwm0 0 20000 0>;  // 移除PWM_POLARITY_INVERTED
             label = "Red PWM LED";
         };
         
         green_pwm_led: pwm_led_green {
-            pwms = <&pwm0 1 20000>;
+            pwms = <&pwm0 1 20000 0>;
             label = "Green PWM LED";
         };
         
         blue_pwm_led: pwm_led_blue {
-            pwms = <&pwm0 2 20000>;
+            pwms = <&pwm0 2 20000 0>;
             label = "Blue PWM LED";
         };
     };
