@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: caksoylar  # <-- new entry
-      url-base: https://github.com/caksoylar
+    - name: penguinchat  # <-- new entry
+      url-base: https://github.com/penguinchat
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
   projects:
@@ -12,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-rgbled-widget  # <-- new entry
-      remote: caksoylar
+      remote: penguincaht
       revision: main
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
