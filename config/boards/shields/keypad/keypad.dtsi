@@ -176,7 +176,6 @@
             psels = <NRF_PSEL(PWM_OUT0, 1, 2)>,  // P1.02 (红色阳极)
                     <NRF_PSEL(PWM_OUT1, 1, 4)>,  // P1.04 (绿色阳极)
                     <NRF_PSEL(PWM_OUT2, 1, 6)>;  // P1.06 (蓝色阳极)
-            nordic,drive-mode = <GPIO_PIN_DRIVE_HIGH>;
         };
     };
     
