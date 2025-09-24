@@ -141,25 +141,25 @@
 };
 / {
     aliases {
-        pwm_red = &pwm_led_red;
-        pwm_green = &pwm_led_green;
-        pwm_blue = &pwm_led_blue;
+        pwm-red = &pwm_led_red;
+        pwm-green = &pwm_led_green;
+        pwm-blue = &pwm_led_blue;
     };
 
-    pwm_leds {
+    pwm-leds {
         compatible = "pwm-leds";
         
-        pwm_led_red: pwm_led_red {
+        pwm_led_red: pwm-led-red {
             pwms = <&pwm0 0 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
             label = "PWM RGB Red LED";
         };
         
-        pwm_led_green: pwm_led_green {
+        pwm_led_green: pwm-led-green {
             pwms = <&pwm0 1 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
             label = "PWM RGB Green LED";
         };
         
-        pwm_led_blue: pwm_led_blue {
+        pwm_led_blue: pwm-led-blue {
             pwms = <&pwm0 2 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
             label = "PWM RGB Blue LED";
         };
@@ -168,8 +168,6 @@
 
 &pwm0 {
     status = "okay";
-    // 根据具体硬件调整PWM控制器配置
-    prescaler = <4>; // 示例值，根据实际情况调整
 };
 
 &pinctrl {
