@@ -11,7 +11,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-rgbled-widget  # <-- new entry
+    - name: zmk-rgbled-widget-1-  # <-- new entry
       remote: penguinchat
       revision: main
     - name: zmk-feature-status-led
