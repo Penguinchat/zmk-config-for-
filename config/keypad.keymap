@@ -84,21 +84,5 @@
                 <&inc_dec_kp PG_UP PG_DN>,
                 <&rgb_encoder>;
         };
-    extra1 {
-            status = "reserved";
-                display-name = "LAYER_4";
-        };
-        extra2 {
-            status = "reserved";
-                display-name = "LAYER_5";
-        };
-        extra3 {
-            status = "reserved";
-                display-name = "LAYER_6";
-        };
-        extra4 {
-            status = "reserved";
-                display-name = "LAYER_7";
-        };
     };
 };
