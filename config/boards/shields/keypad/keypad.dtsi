@@ -88,8 +88,11 @@
       init-delay-ms = <50>;
    };
 
-     vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh";
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 3>;
+        output-ohms = <2000000>;
+        full-ohms = <(2000000 + 820000)>;
     };
 
 };
